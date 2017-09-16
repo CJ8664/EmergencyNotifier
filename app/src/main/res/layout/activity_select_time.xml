@@ -1,0 +1,315 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.cjapps.emergencynotifier.activities.SelectTime">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/select_time_contact_card"
+        android:background="@drawable/card"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:id="@+id/select_time_contact_dp"
+            android:background="@drawable/ic_contact"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:scaleType="fitXY"
+            android:contentDescription="@string/contact_default_photo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/select_time_contact_name"
+            android:text="@string/default_name"
+            android:textSize="18sp"
+            android:textStyle="bold|normal"
+            android:layout_toEndOf="@+id/select_time_contact_dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/select_time_contact_dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="8dp" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/select_time_phone_number_lv"
+            android:layout_toEndOf="@+id/select_time_contact_dp"
+            android:layout_below="@+id/select_time_contact_name"
+            android:layout_toRightOf="@+id/select_time_contact_dp"
+            android:layout_marginLeft="8dp"
+            android:choiceMode="multipleChoice"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="64dp"
+            android:id="@+id/select_time_vertical_divider_iv"
+            android:layout_toEndOf="@+id/select_time_contact_dp"
+            android:background="@color/red_light"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/select_time_contact_dp"
+            android:contentDescription="@string/vertical_divider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_phone_number"
+            android:id="@+id/select_time_phone_number_tv"
+            android:layout_below="@+id/select_time_contact_name"
+            android:layout_toRightOf="@+id/select_time_contact_dp"
+            android:layout_toEndOf="@+id/select_time_contact_dp"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="8dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/select_time_details_sv"
+        android:layout_below="@+id/select_time_contact_card"
+        android:layout_above="@+id/select_time_save_button"
+        android:layout_margin="8dp"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/select_time_child_rl">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/any_time"
+                android:id="@+id/select_time_any_time_checkbox"
+                android:textStyle="italic"
+                android:checked="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/select_time_start_time_card"
+                android:background="@drawable/card"
+                android:paddingBottom="12dp"
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp"
+                android:paddingRight="2dp"
+                android:layout_below="@+id/select_time_any_time_checkbox"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/start_time"
+                    android:id="@+id/start_time_header_tv"
+                    android:textSize="16sp"
+                    android:background="@android:color/white"
+                    android:textColor="@color/red_light"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="4dp"
+                    android:textStyle="bold|normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="4dp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:id="@+id/start_time_tv_separator"
+                    android:background="@color/red_light"
+                    android:layout_alignBottom="@+id/start_time_header_tv"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:contentDescription="@string/horizontal_divider" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/start_time_tv"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_toStartOf="@+id/start_time_button"
+                    android:layout_toLeftOf="@+id/start_time_button"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/default_time"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold|normal"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/start_time_button"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/ic_action_edit"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginRight="8dp"
+                    android:contentDescription="@string/edit_button_desc" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/start_time_vertical_seperator"
+                    android:background="@android:color/darker_gray"
+                    android:layout_alignTop="@+id/start_time_tv_separator"
+                    android:layout_toLeftOf="@+id/start_time_button"
+                    android:layout_toStartOf="@+id/start_time_button"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/vertical_divider" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/select_time_end_time_card"
+                android:background="@drawable/card"
+                android:paddingBottom="12dp"
+                android:paddingLeft="2dp"
+                android:paddingTop="2dp"
+                android:paddingRight="2dp"
+                android:layout_below="@+id/select_time_start_time_card"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/end_time"
+                    android:id="@+id/end_time_header_tv"
+                    android:textSize="16sp"
+                    android:background="@android:color/white"
+                    android:textColor="@color/red_light"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="4dp"
+                    android:textStyle="bold|normal"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="4dp"
+                    />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:id="@+id/end_time_tv_separator"
+                    android:background="@color/red_light"
+                    android:layout_alignBottom="@+id/end_time_header_tv"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:contentDescription="@string/horizontal_divider" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/end_time_tv"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_toStartOf="@+id/button_end_time"
+                    android:layout_toLeftOf="@+id/button_end_time"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/default_time"
+                    android:paddingLeft="8dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold|normal"
+                    android:layout_marginBottom="16dp" />
+
+                <Button
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:id="@+id/button_end_time"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/ic_action_edit"
+                    android:layout_marginTop="38dp"
+                    android:layout_marginRight="8dp"
+                    android:contentDescription="@string/edit_button_desc" />
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="36dp"
+                    android:id="@+id/end_time_vertical_seperator"
+                    android:background="@android:color/darker_gray"
+                    android:layout_alignTop="@+id/end_time_tv_separator"
+                    android:layout_toLeftOf="@+id/button_end_time"
+                    android:layout_toStartOf="@+id/button_end_time"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@string/vertical_separator" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:text="@string/save"
+        android:id="@+id/select_time_save_button"
+        android:background="@drawable/red_button_background"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|normal"
+        android:textSize="18sp"
+        android:paddingLeft="8dp"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/select_time_horizontal_divider"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/red_light"
+        android:contentDescription="@string/horizontal_divider" />
+
+
+</RelativeLayout>
+

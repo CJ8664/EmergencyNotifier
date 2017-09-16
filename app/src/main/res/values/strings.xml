@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Emergency Call Notifier</string>
+    <string name="logo_desc">This is the imageView for Logo</string>
+    <string name="filter_on_contact">Create filter on a Contact</string>
+    <string name="filter_by_time">Create filter by Time</string>
+    <string name="view_filters">View Filters</string>
+    <string name="title_activity_select_contact">SelectContact</string>
+    <string name="title_activity_select_time">SelectTime</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="default_time">--:--:-- AM/PM</string>
+    <string name="edit_button_desc">This is the edit button</string>
+    <string name="default_name">Chirag</string>
+    <string name="save">Save</string>
+    <string name="any_time">Any Time</string>
+    <string name="no_contacts">Sorry no contacts :(</string>
+    <string name="continue_button">Continue</string>
+    <string name="title_activity_vew_filters">View Filters</string>
+    <string name="no_filters">Sorry no filters found :(</string>
+    <string name="bottom_banner_desc">bottom banner</string>
+    <string name="action_share">Share</string>
+    <string name="action_rate_app">Rate Us</string>
+    <string name="title_activity_temp">temp</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_info">Please test the app</string>
+    <string name="filter_toggle_state_active">The filters are active</string>
+    <string name="filter_toggle_state_inactive">The filters are not active</string>
+    <string name="turn_off">Turn OFF</string>
+    <string name="turn_on">Turn ON</string>
+    <string name="share_subject">SHARE SUBJECT</string>
+    <string name="share_body">SHARE BODY</string>
+    <string name="share_dialog_title">Share via</string>
+    <string name="rating_play_store_uri">market://details?id=com.cjapps.emergencynotifier</string>
+    <string name="rating_browser_url">https://play.google.com/store/apps/details?com.cjapps.emergencynotifier</string>
+    <string name="splash_screen_text_1">E</string>
+    <string name="splash_screen_text_2">MERGENCY</string>
+    <string name="splash_screen_text_3">Call Notifier</string>
+    <string name="splash_screen_text_4">!</string>
+    <string name="contact_default_photo">Contact default photo</string>
+    <string name="back_pressed_message">You have not saved the filter yet\nPress back once more to go back</string>
+    <string name="filter_not_saved">The filter was not saved</string>
+    <string name="vertical_divider">vertical divider</string>
+    <string name="default_phone_number">+91 99 9999 9999</string>
+    <string name="horizontal_divider">horizontal divider</string>
+    <string name="vertical_separator">vertical separator</string>
+    <string name="invalid_phone_number">The selected contact does not have a valid phone number</string>
+    <string name="no_contact_selected">"No contact was selected"</string>
+    <string name="invalid_start_time">Please select a valid \'Start Time\'</string>
+    <string name="invalid_end_time">Please select a valid \'End Time\'</string>
+    <string name="filter_created">Filter created successfully</string>
+    <string name="add_filter_on_contact">add_filter_on_contact</string>
+    <string name="add_filter_on_group">add filter on group</string>
+    <string name="view_filters_desc">view filters</string>
+    <string name="delete_button">delete button</string>
+    <string name="undo">Filter Deleted  |  Undo </string>
+</resources>

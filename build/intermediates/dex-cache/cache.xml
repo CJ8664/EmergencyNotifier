@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\Chirag Jain\Desktop\EmergencyNotifier\app\build\intermediates\pre-dexed\debug\support-annotations-20.0.0-a2788d065cd43226f8b3b93499e2b9c03f75eeb0.jar"
+        jar="D:\Softwares\ANDROID\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa"/>
+    <item
+        dex="C:\Users\Chirag Jain\Desktop\EmergencyNotifier\app\build\intermediates\pre-dexed\debug\classes-218691e249f279a93688310a3fec0afbcd1c6523.jar"
+        jar="C:\Users\Chirag Jain\Desktop\EmergencyNotifier\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="f21927d22fe31889ecce94dd697a2e75b137e0ef"/>
+    <item
+        dex="C:\Users\Chirag Jain\Desktop\EmergencyNotifier\app\build\intermediates\pre-dexed\debug\classes-cc15e4d7c0916f9a97b167632c6c8ef5934eb105.jar"
+        jar="C:\Users\Chirag Jain\Desktop\EmergencyNotifier\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0"/>
+    <item
+        dex="C:\Users\Chirag Jain\Desktop\EmergencyNotifier\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-999338a1efe8c1c6977419d969934bf4d0213202.jar"
+        jar="C:\Users\Chirag Jain\Desktop\EmergencyNotifier\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="21.1.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d"/>
+
+</pre-dex-items>

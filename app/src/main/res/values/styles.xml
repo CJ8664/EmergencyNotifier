@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the theme applied to the application or activity -->
+    <style name="RedActionBarTheme" parent="Theme.AppCompat.Light">
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/RedActionBar</item>
+    </style>
+
+    <!-- general styles for the action bar -->
+    <style name="RedActionBar"
+        parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/RedTitleTextStyle</item>
+        <item name="android:background">@color/red_light</item>
+
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/RedTitleTextStyle</item>
+        <item name="background">@color/red_light</item>
+    </style>
+
+    <!--Red action bar title text -->
+    <style name="RedTitleTextStyle"
+        parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="WhiteActionBarTheme" parent="Theme.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/WhiteActionBar</item>
+
+        <!-- Support library compatibility -->
+        <item name="actionBarStyle">@style/WhiteActionBar</item>
+    </style>
+
+    <!-- general styles for the action bar -->
+    <style name="WhiteActionBar"
+        parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:titleTextStyle">@style/WhiteTitleTextStyle</item>
+        <item name="android:background">@android:color/white</item>
+
+        <!-- Support library compatibility -->
+        <item name="titleTextStyle">@style/WhiteTitleTextStyle</item>
+        <item name="background">@android:color/white</item>
+    </style>
+
+    <!-- White action bar title text -->
+    <style name="WhiteTitleTextStyle"
+        parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/red_light</item>
+    </style>
+
+</resources>

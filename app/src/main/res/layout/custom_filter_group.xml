@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:background="@drawable/card">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTextView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold|normal"
+        android:textSize="18sp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="8dp"
+        android:layout_toLeftOf="@+id/photoImageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/filterCountTextView"
+        android:layout_below="@+id/nameTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="italic"
+        android:textSize="14sp"
+        android:layout_marginLeft="36dp"
+        android:layout_toLeftOf="@+id/photoImageView" />
+
+    <ImageView
+        android:layout_width="59dp"
+        android:layout_height="59dp"
+        android:id="@+id/photoImageView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_contact"
+        android:scaleType="fitXY"
+        android:layout_marginRight="1dp"
+        android:layout_marginTop="1dp" />
+
+</RelativeLayout>

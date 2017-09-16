@@ -1,0 +1,100 @@
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white">
+
+    <ExpandableListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/expandableListView"
+        android:dividerHeight="4dp"
+        android:smoothScrollbar="true"
+        android:divider="#00ffffff"
+        android:childDivider="#ffe1e1e1"
+        android:scrollingCache="true"
+        android:stackFromBottom="false"
+        android:layout_below="@+id/imageView"
+        android:layout_toRightOf="@+id/no_filters_textview"
+        android:layout_toEndOf="@+id/no_filters_textview"
+        android:layout_margin="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/no_filters"
+        android:id="@+id/no_filters_textview"
+        android:textStyle="bold|normal"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/imageView"
+        android:background="@color/red_light"
+        android:contentDescription="@string/horizontal_divider"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:background="#af000000"
+        android:id="@+id/view_filters_undo_layout"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Filter deleted"
+            android:id="@+id/textView"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Undo"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imageView2"
+            android:layout_toStartOf="@+id/imageView2"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="8dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/ic_undo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="8dp" />
+
+        <ImageView
+            android:layout_width="2dp"
+            android:layout_height="24dp"
+            android:id="@+id/imageView5"
+            android:background="@android:color/white"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView2"
+            android:layout_toStartOf="@+id/textView2"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

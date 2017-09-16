@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white">
+
+    <com.cjapps.emergencynotifier.utility.PinnedSectionListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:headerDividersEnabled="false"
+        android:footerDividersEnabled="false"
+        android:divider="#ffebebeb"
+        android:dividerHeight="2dp"
+        android:id="@android:id/list"
+        android:choiceMode="multipleChoiceModal"
+        android:textFilterEnabled="true"
+        android:drawSelectorOnTop="false"
+        android:scrollingCache="true"
+        android:scrollbarStyle="insideInset"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="16dp"
+        android:layout_above="@+id/continue_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/no_contacts"
+        android:id="@+id/no_contact_tv"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold|normal"
+        android:visibility="gone" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:text="@string/continue_button"
+        android:id="@+id/continue_button"
+        android:background="@drawable/red_button_background"
+        android:textColor="@android:color/white"
+        android:textStyle="bold|normal"
+        android:textSize="18sp"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:id="@+id/imageView"
+        android:background="@color/red_light"
+        android:contentDescription="@string/horizontal_divider"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
